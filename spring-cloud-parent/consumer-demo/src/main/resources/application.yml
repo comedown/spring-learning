@@ -11,3 +11,8 @@ server:
 spring:
   application:
     name: consumer-demo
+
+# feign自带断路器，需要开启
+feign:
+  hystrix:
+    enabled: true

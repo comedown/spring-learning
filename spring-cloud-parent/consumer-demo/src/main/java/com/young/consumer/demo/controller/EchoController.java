@@ -1,8 +1,10 @@
 package com.young.consumer.demo.controller;
 
+import com.young.common.transfer.bean.UserBean;
 import com.young.consumer.demo.service.EchoService;
 import com.young.consumer.demo.service.FeignService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +25,11 @@ public class EchoController {
     @RequestMapping("/feign/hi")
     public String callFeignHi(String name) {
         return feignService.sayHiFromClient(name);
+    }
+
+    @PostMapping("/feign/auto/register")
+    public UserBean autoRegister(UserBean userBean) {
+        return feignService.autoRegister(userBean);
     }
 
 }
