@@ -10,6 +10,7 @@
     <modules>
         <module>spring-cloud-parent</module>
         <module>common-parent</module>
+        <module>spring-framework-parent</module>
     </modules>
 
     <packaging>pom</packaging>
