@@ -15,6 +15,7 @@
     <modules>
         <module>dependency-injection</module>
         <module>aspect-oriented-programming</module>
+        <module>data-access</module>
     </modules>
 
     <properties>
